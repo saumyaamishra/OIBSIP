@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Landing Page </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+            text-shadow: 1px 1px #000000;
+        }
+        h1 {
+            font-size: 45px;
+            line-height: 64px;
+            color: #fffefe;
+        }
+        h2 {
+            font-size: 35px;
+            line-height: 54px;
+            color: #fffefe
+        }
+        h3 {
+            font-size: 25px;
+            line-height: 44px;
+            color: #fffefe;
+        }
+        h4 {
+            font-size: 20px;
+            color: #fffefe
+        }
+        p {
+            font-size: 16px;
+            color: #fcfffe;
+        }
+        body {
+            width: 100%;
+        }
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 50px;
+            background-color: rgb(87, 8, 8);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+        }
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fffefe; 
+            transition: 0.3s ease;
+        }
+        #navbar li a:hover,
+        #navbar li a.active {
+            color:rgb(181, 147, 147);
+        }
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: rgb(181, 147, 147);
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        #home {
+            background-image: url(https://www.nme.com/wp-content/uploads/2022/08/Louis-Tomlinson-onstage-at-Away-From-Home-Festival.jpg);
+            background-size: cover;
+            padding: 80px 80px;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;  
+        }
+        #home .button {
+            padding-top: 30px;
+        }
+        #home .button button {
+            background-color: rgb(202, 99, 54);
+            border: 0;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        #home .foot h2 {
+            text-shadow: 5px 5px #000000;
+            padding-top: 20px;
+        }
+        #new-album {
+            background-color: #181212;
+        }
+        #new-album .album-content { 
+            padding: 80px 80px;
+            text-align: right;
+        }
+        #new-album .album-content i { 
+            padding: 20px;
+            color: #8a1717;
+        }
+        #newsletter {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            background-image: url(https://i.pinimg.com/originals/04/0f/46/040f46b6d6837db01054f4613d89020b.png);
+            background-repeat: no-repeat;
+            background-position: 20% 30%;
+            background-size: cover;
+        }
+        #newsletter .newstext {
+            padding: 80px 80px;
+        }
+        #newsletter p span {
+            color:#7a1b1b;
+        }
+        #newsletter input {
+            height: 3.125rem;
+            padding: 0 1.25em;
+            font-size: 14px;
+            width: 50%;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        #newsletter button {
+            padding: 5px;
+            background-color:rgb(140, 44, 44);
+            color: rgb(255, 255, 255);
+            white-space: nowrap;
+            border: 0;
+            border-radius: 5px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        #newsletter .form {
+            padding-left: 100px;
+            display: flex;
+            width: 40%;
+        }
+        #footer {
+            text-align: center;
+            padding: 50px;
+            background-color: #181212;
+        }
+        #footer h3 i {
+            padding: 20px;
+            color: #8a1717;
+        }
+    </style>
+    </head>
+    <body>
+        <section id = "header"> 
+            <h2>LOUIS TOMLINSON</h2>
+            <div> 
+                <ul id = "navbar">
+                    <li> <a class="active" href = "landing_page.html">HOME</a> </li>
+                    <li> <a href = >MERCH</a> </li>
+                    <li> <a href = >ABOUT</a> </li>
+                    <li> <a href = >MUSIC</a> </li>
+                    <li> <a href = ><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id = "home">
+            <h3>Lido di Camaiore, Italy</h3>
+            <h1>THE AWAY FROM HOME FESTIVAL</h1>
+            <h2>AUGUST 19TH, 2023</h2>
+            <div class = "button">
+                <button><h4>Book Tickets!</h4></button>
+            </div>
+            <div class = "foot">
+                <h2>Blossoms | The Cribs | HotWax | Andrew Cushin</h2>
+            </div>
+        </section>
+        <section id = "new-album">
+            <img src = "https://lastfm.freetls.fastly.net/i/u/ar0/ef8e6742610a42559acbb16e3706f38e.jpg" align = "left" width="350px">
+            <div class = "album-content">
+                <h1 style = "color: #8a1717;">THE NEW ALBUM</h1>
+                <h2 style = "color: #8a1717;">Out Now!</h2>
+                <h2>
+                    <i class = "fab fa-spotify"> </i> 
+                    <i class = "fab fa-itunes"> </i>
+                    <i class = "fab fa-youtube"> </i>
+                </h2>
+            </div>
+        </section>
+        <section id = "newsletter">
+            <div class = "newstext">
+                <h4>Sign Up for Newsletter!</h4>
+                <p style = "padding-top: 25px;">E-mail updates about <span>latest releases.</span></p>
+                <p style = "padding-top: 5px;">Special discounts on tour tickets.</p>
+                <p style = "padding-top: 5px;">Chance to win Vinyl giveaways.</p>
+            </div>
+            <div class = "form">
+                <input type = "text" placeholder = "Enter your E-mail ID">
+                <button class = "normal">Sign Up</button>
+            </div>
+        </section>
+        <section id = "footer">
+            <h3>
+                <i class = "fab fa-facebook-f"> </i>
+                <i class = "fab fa-twitter"> </i>
+                <i class = "fab fa-instagram"> </i>
+                <i class = "fab fa-youtube"> </i>
+            </h3>
+        </section>
+    </body>
+</html>
