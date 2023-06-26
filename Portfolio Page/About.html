@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> About </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+            text-shadow: 1px 1px #000000;
+        }
+        h1 {
+            font-size: 55px;
+            line-height: 64px;
+            color: #ebcca8;
+            text-shadow: 2px 2px #4d1f0f;
+        }
+        h2 {
+            font-size: 35px;
+            line-height: 54px;
+            color: #e7e3df;
+            text-shadow: 2px 2px #4d1f0f;
+        }
+        h3 {
+            font-size: 17px;
+            line-height: 44px;
+            color: #fffefe;
+        }
+        body {
+            width: 100%;
+        }
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 45px 50px;
+        }
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(255, 255, 255); 
+            transition: 0.3s ease;
+        }
+        #navbar li a:hover,
+        #navbar li a.active {
+            color:#fcfffe;
+        }
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        #bg {
+            background-color: #86675e;
+        }
+        #about {
+            margin-left: 70px;
+            margin-right: 30px;
+        }
+        #about h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #about img {
+            margin-right: 30px;
+            margin-left: 30px;
+            border-radius: 50%;
+        }
+        #about hr {
+            margin-right: 80px;
+            margin-top: 100px;
+        }
+        #workex {
+            margin-top: 50px;
+            background-image: url(https://img.freepik.com/premium-photo/work-home-concept-flatlay-aesthetic-minimalist-workspace-woman-write-notes-notebook_408798-8566.jpg);
+            background-size: cover;
+            padding-bottom: 120px;
+        }
+        #workex h1{
+            padding-top: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px #4d1f0f;
+        }
+        .exp-box {
+            margin: 0 30px;
+            text-align: left;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+        }
+        .exp-set {
+            padding-left: 20px;
+            background-color: #c19c91;
+            width: 47%;
+            min-width: 250px;
+            padding: 5px 15px;
+            border: 0;
+            border-radius: 7px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            position: relative;
+        }
+        .exp-set h3 {
+            padding-top: 10px;
+            padding-left: 50px;
+        }
+        .exp-set img {
+            padding-top: 13px;
+            padding-right: 5px;
+        }
+        #hr2 {
+            margin-right: 80px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 60px;
+        }
+        #certs {
+            margin-top: 50px; 
+            padding-bottom: 50px; 
+        }
+        #certs h1 {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .cert-box {
+            margin: 0 30px;
+            text-align: left;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+        }
+        .cert-set {
+            padding-left: 20px;
+            background-color: #cdafa6;
+            width: 31%;
+            min-width: 250px;
+            padding: 5px 15px;
+            border: 0;
+            border-radius: 7px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            position: relative;
+        }
+        #certs h3 {
+            padding: 10px 15px;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="bg">
+            <section id = "header"> 
+                <div> 
+                <ul id = "navbar">
+                    <li> <a href = "Portfolio.html">Home</a> </li>
+                    <li> <a href = "https://inkingsoulss.blogspot.com/?m=1&fbclid=PAAabtgFqKqK47Q8s3_RAlDzNl5s7msq78lHU9traVWLCYRXyAil37dxu8KV8">Blog</a> </li>
+                    <li> <a class="active" href = "About.html">About</a> </li>
+                    <li> <a href = "Portfolio.html#contact-foot">Contact</a> </li>
+                </ul>
+                </div>
+            </section> 
+            <section id="about">
+                <h1>About Me</h1>
+                <img src="Prof_pic.jpeg" alt="img not supported" align = "right" width="235px">
+                <h3>I'm an enthusiast front end web developer and designer, content writer, and 
+                    am creative with CSS. Skilled in researching, writing, and editing diverse content.
+                    Proficient in identifying target audience, and creating interesting content 
+                    accordingly. Hold experience inorganizing events along with my team, and engaging 
+                    the audience. Can adapt to appropriate audiences easily.
+                </h3>
+                <hr>
+            </section>
+            <section id="workex">
+                <h1>Work Experience</h1>
+                <div class = "exp-box">
+                    <div class = "exp-set">
+                        <img src="OI.png" alt="image not supported" align = "left" width="45px">
+                        <h3> Oasis Infobyte | Web Development Intern
+                            <br>15th June, 2023 - 15th July, 2023
+                            <br>- Created several webpages using HTML, CSS, and JavaScript
+                        </h3>
+                    </div>
+                    <div class = "exp-set">
+                        <img src="BI.png" alt="image not supported" align = "left" width="45px">
+                        <h3> Bharat-Intern | Web Development Intern
+                            <br>10th June, 2023 - 10th July, 2023
+                            <br>- Created several webpages using HTML, CSS, and JavaScript
+                        </h3>
+                    </div>
+                </div>
+                <div class="exp-box">
+                    <div class = "exp-set">
+                        <img src="IP.jpg" alt="image not supported" align = "left" width="40px">
+                        <h3> InternPe | Web Development Intern
+                            <br>5th June, 2023 - 5th July, 2023
+                            <br>- Created several webpages using HTML, CSS, and JavaScript
+                            <br>- Participated in quizzes
+                        </h3>
+                    </div>
+                    <div class = "exp-set">
+                        <img src="JPMC.png" alt="image not supported" align = "left" width="45px">
+                        <h3> JPMorgan Chase & Co. | Software Engineering Virtual Experience Participant
+                            <br>May, 2023 
+                            <br>- Created interface with a stock price data feed
+                            <br>- Used JPMorgan Chase & Co. frameworks and tools
+                            <br>- Displayed data visually for traders
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <hr id="hr2">
+            <section id="certs">
+                <h1>Honors and Certifications</h1>
+                <div class = "cert-box">
+                    <div class = "cert-set">
+                        <h3> 1st place in DSA Hackathon
+                            <br><i><span style="color: #4d1f0f; text-shadow: 0.5px 0.5px #fcfffe;">
+                            Issued by Emancipation Edutech Private Limited</i></span>
+                        </h3>
+                    </div>
+                    <div class = "cert-set">
+                        <h3> Java Programming: Solving Problems with Software
+                            <br><i><span style="color: #4d1f0f; text-shadow: 0.5px 0.5px #fcfffe;">
+                            Course completed, offered by Duke University via Coursera</i></span>
+                        </h3>
+                    </div>
+                    <div class = "cert-set">
+                        <h3> Programming for Everybody (Getting Started with Python)
+                            <br><i><span style="color: #4d1f0f; text-shadow: 0.5px 0.5px #fcfffe;">
+                            Course completed, offered by University of Michigan via Coursera</i></span>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html> 
