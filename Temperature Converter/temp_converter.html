@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Temperature Converter </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        h1 {
+            padding-top: 20px;
+            font-size: 50px;
+            line-height: 64px;
+            color: #222;
+            text-align: center;
+        }
+        h4 {
+            font-size: 20px;
+            color: #222;
+        }
+        .skill-box {
+            text-align: left;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+        }
+        .skill-set {
+            background-color: #d1b3f5;
+            width: 47%;
+            min-width: 250px;
+            padding: 20px 30px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            position: relative;
+        }
+        #temp1Unit {
+            padding: 7px;
+        }
+        #temp2Unit {
+            padding: 7px;
+        }
+        .calc {
+            font-size: 15px;
+            color: #fff;
+            background-color: #a054fd;
+            padding: 13px;
+            border: 0;
+            border-radius: 5px;
+        }
+        body {
+            margin: 40px 50px;
+            background-color: rgb(236, 240, 247);
+        }
+        #temp1 {
+            padding: 5px;
+        }
+        .convert {
+            padding-bottom: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <section id = "home">
+            <h1>Temperature Converter</h1>
+            <br><br>
+            <div class = "skill-box">
+                <div class = "skill-set">
+                    <form>
+                        <label>Enter Temperature: </label>
+                        <input type="text" id="temp1">
+                        <br><br>
+                        <label>From: </label>
+                        <select id="temp1Unit">
+                            <option value="celcius">Celcius</option>
+                            <option value="farhen">Farhenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                        <br><br>
+                        <label>To: </label>
+                        <select id="temp2Unit">
+                            <option value="celcius">Celcius</option>
+                            <option value="farhen">Farhenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                        <br><br><br>
+                        <input class = "calc" type="button" value = "Calculate" onclick="CalcTemp()">
+                        <br><br><br>
+                        <h4>Result: <output id = "result"></h4>
+                    </form>
+                </div>
+                <div class = "skill-set">
+                    <h2 style="text-align: center;">Conversion of Units</h2>
+                    <br><br>°Celcius -> °Farhenheit = °C x 1.8 + 32
+                    <br><br>°Celcius -> Kelvin = °C + 273.15
+                    <br><br>°Farhenheit -> °Celcius = (°F -32) x 1.8
+                    <br><br>°Farhenheit -> Kelvin = (°F + 459.67) / 1.8 
+                    <br><br>Kelvin -> °Farhenheit = K x 1.8 - 459.67
+                    <br><br>Kelvin -> °Celcius = K - 273.15 <br><br>
+                </div>
+            </div>
+        </section>
+        <script src = "temp_converter.js"></script>
+    </body>
+</html>
